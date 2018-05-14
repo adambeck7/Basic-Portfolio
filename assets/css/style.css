@@ -1,0 +1,32 @@
+.about{
+    color:#4aaaa5;
+    align-content: center;
+    background-color: white;
+    overflow: visible;
+
+}
+body{
+    background-image: url("../images/paper/paper.png");
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.about-image{
+    float: left;
+    width: 30%;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.about-text{
+    float: left;
+    width: 70%;
+
+
+}
+#container{
+    width: 960px;
+    height:800px;
+    align-content: center;
+    display: block;
+    background-color: white;
+}
