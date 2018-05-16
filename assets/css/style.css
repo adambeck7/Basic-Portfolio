@@ -92,6 +92,14 @@ body{
     line-height: 1.5;
     padding-bottom: 20px;
 }
+/* #container-portfolio{
+    height: 800;
+} */
+.portfolio-images{
+    /* min-width: 200px; */
+    width:274px;
+    padding:40px;
+}
 a:link {
     text-decoration: none;
     color: #777777;
