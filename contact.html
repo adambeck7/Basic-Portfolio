@@ -3,8 +3,9 @@
 <head>
     <title>Adam Beck</title>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="main.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		
     <div id="header-container">
         <div class="name-header">
             <h1>Adam Beck</h1>
@@ -41,11 +42,11 @@
             
             <form id="contact-form">
                 Name<br>
-                <input type="text" name="name" class="one-hundo-width"> <br>
+                <input type="text" name="name" class="one-hundo-width" required> <br>
                 Email<br>
-                <input type="text" name="email" class="one-hundo-width"><br>
+                <input type="text" name="email" class="one-hundo-width" required><br>
                 Message<br>
-                <textarea name="message" rows="3" class="one-hundo-width text-box-height"></textarea>
+                <textarea name="message" rows="3" class="one-hundo-width text-box-height" required></textarea>
                 <button type="submit" value="submit" class="submit-button">Submit</button>
 
             </form>
@@ -54,4 +55,13 @@
 </div>
     
 </body>
+<script>
+    $("#contact-form").validate({
+        rules: {
+            name: {
+                required: true,
+            }
+        }
+    });
+</script>
 </html>
