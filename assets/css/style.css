@@ -110,7 +110,7 @@ img {
 
 .image-banners {
     background-color: #4aaaa5;
-    height: 50px;
+    height: 30px;
     width: 300px;
     position: absolute;
     display: inline-block;
@@ -118,6 +118,7 @@ img {
     z-index: 2;
     text-align: center;
     color: white;
+    padding-top: 10px
 }
 
 a:link {
